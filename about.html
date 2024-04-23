@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <nav class="flex justify-between bg-gray-900 text-white w-full">
+        <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+            <div class="flex justify-start items-center">
+                <a class="flex items-center text-3xl font-bold font-heading" href="#">
+                    <img class="h-9" src="./assets/images/logo.svg" alt="logo">
+                    <span class="ml-3">Traveling Site.</span>
+                </a>
+            </div>
+            <div class="flex justify-center items-center flex-grow">
+                <!-- Nav Links -->
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="block cursor-pointer md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"></svg>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+                <ul class="flex items-center gap-10 px-10 justify-center md:flex-grow md:justify-end md:items-center md:w-auto">
+                    <li><a class="hover:text-gray-200" href="index.html">Home</a></li>
+                    <li><a class="hover:text-gray-200" href="about.html">About Us</a></li>
+                    <li><a class="hover:text-gray-200" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center justify-end w-1/3">
+                <input type="text" placeholder="Enter a destinaton or keyword" class="flex-grow px-4 py-2 rounded-md bg-white text-gray-800 focus:outline-none shadow-md">
+                <button class="ml-2 px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600">Search</button>
+                <button class="ml-2 px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600">Clear</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto mt-12 px-2 sm:px-4 lg:px-6">
+        <div class="flex flex-wrap -mx-2 sm:-mx-4 lg:-mx-6">
+            <div class="w-full sm:w-1/2 lg:w-1/2 px-2 sm:px-4 lg:px-6">
+                <h1 class="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">About us</h1>
+                <!-- First column content -->
+                <div class="text-white max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl bg-gray-800 rounded-lg bg-opacity-10 p-4 mt-4 shadow-xl">
+                    <p class="text-lg">
+                     
+A simple travel website offers intuitive navigation and streamlined booking processes for users.
+Its minimalist design focuses on presenting essential information such as destinations,
+ accommodations, and transportation options. The website provides clear pricing details and allows users to easily compare different travel packages. 
+With user-friendly features and responsive design, it ensures a hassle-free experience for travelers planning their next adventure.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="w-full sm:w-1/2 lg:w-1/2 px-2 sm:px-4 lg:px-6">
+                <h1 class="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">Meet the team</h1>
+                <div class="grid grid-cols-1 xl:grid-cols-3 sm:grid-cols-1 gap-8 mt-12">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <img src="https://i.pravatar.cc/150?img=7" alt="Person 1" class="w-32 h-32 rounded-full mx-auto mb-4">
+                        <h2 class="text-xl font-bold mb-2">John Smith</h2>
+                        <p class="text-gray-700">Senior Full Stack Developer</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <img src="https://i.pravatar.cc/150?img=14" alt="Person 2" class="w-32 h-32 rounded-full mx-auto mb-4">
+                        <h2 class="text-xl font-bold mb-2">Jane Johnson</h2>
+                        <p class="text-gray-700">Senior Full Stack Developer</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="Person 3" class="w-32 h-32 rounded-full mx-auto mb-4">
+                        <h2 class="text-xl font-bold mb-2">Bryan Neo</h2>
+                        <p class="text-gray-700">Senior Full Stack Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com/2.2.19/tailwind.min.js"></script>
+</body>
+
+</html>
